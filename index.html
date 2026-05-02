@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Cybersecurity awareness blog with plain-language guides to common hacking methods and practical protection steps."
+    >
+    <title>CyberSafe Basics | Cybersecurity Awareness Blog</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CyberSafe Basics home">
+        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span>CyberSafe Basics</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#threats">Threats</a>
+        <a href="#protect">Protection</a>
+        <a href="#response">Emergency</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Cybersecurity awareness for everyone</p>
+          <h1 id="hero-title">Learn how hackers target people, and how to protect yourself.</h1>
+          <p class="hero-copy">
+            A practical, beginner-friendly guide to phishing, password attacks, malware, public Wi-Fi risks,
+            social engineering, and the simple habits that stop most everyday cyber attacks.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#protect">Start with protection</a>
+            <a class="button button-secondary" href="#threats">Explore attack types</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-band" aria-labelledby="intro-title">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">Why this matters</p>
+            <h2 id="intro-title">Most cyber attacks begin with ordinary moments.</h2>
+          </div>
+          <p>
+            A rushed click, a reused password, a fake delivery message, or a public Wi-Fi login can give an attacker
+            the opening they need. The goal of this blog is not to scare people. It is to make safer choices feel
+            normal, simple, and repeatable.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="threats" aria-labelledby="threats-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Common hacking types</p>
+            <h2 id="threats-title">Know the tricks before they reach you.</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="Filter threat cards">
+            <button class="filter-button is-active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="identity">Identity</button>
+            <button class="filter-button" type="button" data-filter="device">Device</button>
+            <button class="filter-button" type="button" data-filter="network">Network</button>
+          </div>
+
+          <div class="card-grid">
+            <article class="threat-card" data-category="identity">
+              <span class="card-icon" aria-hidden="true">01</span>
+              <h3>Phishing</h3>
+              <p>
+                Fake emails, texts, or websites pressure you to reveal passwords, payment details, or one-time codes.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Open websites from bookmarks, check sender addresses, and never share verification codes.</p>
+            </article>
+
+            <article class="threat-card" data-category="identity">
+              <span class="card-icon" aria-hidden="true">02</span>
+              <h3>Password Attacks</h3>
+              <p>
+                Attackers try leaked, weak, or reused passwords to break into email, banking, and social accounts.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Use a password manager, unique passwords, and multi-factor authentication.</p>
+            </article>
+
+            <article class="threat-card" data-category="device">
+              <span class="card-icon" aria-hidden="true">03</span>
+              <h3>Malware and Ransomware</h3>
+              <p>
+                Harmful apps or files can steal data, spy on activity, or lock files until money is demanded.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Install updates, avoid unknown downloads, and keep offline or cloud backups.</p>
+            </article>
+
+            <article class="threat-card" data-category="identity">
+              <span class="card-icon" aria-hidden="true">04</span>
+              <h3>Social Engineering</h3>
+              <p>
+                Scammers pretend to be support staff, family, employers, or officials to rush you into action.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Pause, verify through a trusted channel, and do not act on urgency alone.</p>
+            </article>
+
+            <article class="threat-card" data-category="network">
+              <span class="card-icon" aria-hidden="true">05</span>
+              <h3>Public Wi-Fi Snooping</h3>
+              <p>
+                Unsafe networks can expose browsing activity or trick you into joining fake hotspots.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Use mobile data or a trusted VPN for sensitive activity, and avoid unknown hotspots.</p>
+            </article>
+
+            <article class="threat-card" data-category="identity">
+              <span class="card-icon" aria-hidden="true">06</span>
+              <h3>SIM Swapping</h3>
+              <p>
+                Criminals try to move your phone number to their SIM card so they can receive account codes.
+              </p>
+              <strong>Protect yourself:</strong>
+              <p>Add a carrier PIN and use app-based authentication instead of SMS when possible.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="protect" aria-labelledby="protect-title">
+        <div class="section-inner protection-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Personal protection checklist</p>
+            <h2 id="protect-title">Small habits that block big problems.</h2>
+            <p>
+              You do not need to be technical to be safer online. Start with these habits and build from there.
+            </p>
+          </div>
+          <div class="checklist">
+            <label><input type="checkbox"> Use unique passwords for important accounts</label>
+            <label><input type="checkbox"> Turn on multi-factor authentication</label>
+            <label><input type="checkbox"> Keep phones, laptops, browsers, and apps updated</label>
+            <label><input type="checkbox"> Back up important files regularly</label>
+            <label><input type="checkbox"> Verify payment or password requests before acting</label>
+            <label><input type="checkbox"> Review bank and email alerts weekly</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="response" aria-labelledby="response-title">
+        <div class="section-inner response-grid">
+          <div class="section-heading">
+            <p class="eyebrow">If something goes wrong</p>
+            <h2 id="response-title">Act quickly, calmly, and in the right order.</h2>
+          </div>
+          <ol class="response-list">
+            <li><strong>Disconnect:</strong> Turn off Wi-Fi or unplug the network if a device looks infected.</li>
+            <li><strong>Change passwords:</strong> Start with email, banking, and social accounts from a safe device.</li>
+            <li><strong>Enable MFA:</strong> Add app-based authentication where available.</li>
+            <li><strong>Contact providers:</strong> Tell your bank, carrier, school, or workplace if accounts are affected.</li>
+            <li><strong>Report:</strong> In the U.S., report fraud at <a href="https://reportfraud.ftc.gov/">ReportFraud.ftc.gov</a>.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>CyberSafe Basics is an awareness resource. For serious incidents, contact your bank, service provider, or local cybercrime authority.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

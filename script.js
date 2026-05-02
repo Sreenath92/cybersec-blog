@@ -1,6 +1,7 @@
 const filterButtons = document.querySelectorAll("[data-filter]");
 const threatCards = document.querySelectorAll("[data-category]");
 const checklistCards = document.querySelectorAll(".checklist-card");
+const backToTop = document.querySelector(".back-to-top");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -28,3 +29,12 @@ checklistCards.forEach((card) => {
   checkboxes.forEach((checkbox) => checkbox.addEventListener("change", updateProgress));
   updateProgress();
 });
+
+if (backToTop) {
+  const toggleBackToTop = () => {
+    backToTop.classList.toggle("is-visible", window.scrollY > 420);
+  };
+
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+  toggleBackToTop();
+}

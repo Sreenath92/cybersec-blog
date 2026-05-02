@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Cybersecurity awareness blog with plain-language guides to common hacking methods and practical protection steps."
+      content="India-focused cybersecurity awareness blog with plain-language guides to cyber attacks, online scams, reporting steps, and protection checklists."
     >
+    <meta property="og:title" content="CyberSafe Basics | Cybersecurity Awareness Blog">
+    <meta
+      property="og:description"
+      content="Beginner-friendly cybersecurity awareness for India: scams, cyber attacks, checklists, and reporting steps."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sreenath92.github.io/cybersec-blog/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80">
     <title>CyberSafe Basics | Cybersecurity Awareness Blog</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="CyberSafe Basics home">
+      <a class="brand" href="index.html" aria-label="CyberSafe Basics home">
         <span class="brand-mark" aria-hidden="true">CS</span>
         <span>CyberSafe Basics</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="#articles">Articles</a>
-        <a href="#threats">Threats</a>
-        <a href="#protect">Protection</a>
-        <a href="#response">Emergency</a>
-        <a href="#report">Report</a>
-        <a href="#author">Author</a>
+        <a href="checklists.html">Checklists</a>
+        <a href="report-india.html">Report</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
 
@@ -32,15 +39,15 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Cybersecurity awareness for everyone</p>
-          <h1 id="hero-title">Learn how hackers target people, and how to protect yourself.</h1>
+          <p class="eyebrow">Cybersecurity awareness for India</p>
+          <h1 id="hero-title">Learn how cyber attacks target people, and how to protect yourself.</h1>
           <p class="hero-copy">
-            A practical, beginner-friendly guide to phishing, password attacks, malware, public Wi-Fi risks,
-            social engineering, and the simple habits that stop most everyday cyber attacks.
+            Plain-language guides for UPI fraud, WhatsApp scams, phishing, hacked accounts, mobile security,
+            reporting cybercrime in India, and practical safety checklists.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#articles">Read the blog</a>
-            <a class="button button-secondary" href="#protect">Start with protection</a>
+            <a class="button button-primary" href="#articles">Read articles</a>
+            <a class="button button-secondary" href="report-india.html">Report cybercrime</a>
           </div>
         </div>
       </section>
@@ -52,10 +59,35 @@
             <h2 id="intro-title">Most cyber attacks begin with ordinary moments.</h2>
           </div>
           <p>
-            A rushed click, a reused password, a fake delivery message, or a public Wi-Fi login can give an attacker
-            the opening they need. The goal of this blog is not to scare people. It is to make safer choices feel
-            normal, simple, and repeatable.
+            A rushed click, a reused password, a fake delivery message, or a payment request can give an attacker the
+            opening they need. This blog helps readers slow down, verify, protect accounts, and report quickly.
           </p>
+        </div>
+      </section>
+
+      <section class="section quick-links" aria-labelledby="quick-links-title">
+        <div class="section-inner">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Start here</p>
+            <h2 id="quick-links-title">Choose what you need right now.</h2>
+          </div>
+          <div class="resource-grid">
+            <a class="resource-card" href="report-india.html">
+              <span>01</span>
+              <strong>Report cybercrime in India</strong>
+              <p>Call 1930, collect evidence, contact your bank, and file at cybercrime.gov.in.</p>
+            </a>
+            <a class="resource-card" href="checklists.html">
+              <span>02</span>
+              <strong>Use safety checklists</strong>
+              <p>Check phone, social media, computer, home network, and UPI safety settings.</p>
+            </a>
+            <a class="resource-card" href="#articles">
+              <span>03</span>
+              <strong>Read scam guides</strong>
+              <p>Learn how common scams work before they reach your family or workplace.</p>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -63,81 +95,104 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Latest articles</p>
-            <h2 id="articles-title">Start with the attacks people meet most often.</h2>
+            <h2 id="articles-title">India-focused cyber safety guides.</h2>
             <p>
-              These short guides are written for everyday users, families, students, and small teams who want clear
-              steps they can actually follow.
+              Use the search and filters to find guides by topic. Each article gives warning signs, prevention steps,
+              and what to do if something goes wrong.
             </p>
           </div>
 
+          <div class="article-tools" aria-label="Article search and category filters">
+            <label class="search-label">
+              <span>Search articles</span>
+              <input type="search" data-article-search placeholder="Try UPI, WhatsApp, password, reporting">
+            </label>
+            <div class="filter-bar">
+              <button class="filter-button is-active" type="button" data-article-filter="all">All</button>
+              <button class="filter-button" type="button" data-article-filter="banking">Banking</button>
+              <button class="filter-button" type="button" data-article-filter="social">Social</button>
+              <button class="filter-button" type="button" data-article-filter="device">Device</button>
+              <button class="filter-button" type="button" data-article-filter="reporting">Reporting</button>
+            </div>
+          </div>
+
           <div class="article-grid">
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=78"
-                alt="Person reviewing payment security on a laptop"
-              >
+            <article class="article-card" data-article-card data-article-category="banking">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=78" alt="Person using a payment card and laptop">
               <div class="article-card-body">
-                <p class="article-meta">Identity safety · 5 min read</p>
+                <p class="article-meta">Banking safety - 6 min read - Updated May 2026</p>
+                <h3><a href="posts/upi-fraud.html">UPI Fraud: Warning Signs and First Steps</a></h3>
+                <p>Learn how UPI scams happen, what not to share, and what to do immediately after fraud.</p>
+              </div>
+            </article>
+
+            <article class="article-card" data-article-card data-article-category="social">
+              <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=900&q=78" alt="Phone with social media apps">
+              <div class="article-card-body">
+                <p class="article-meta">Social media - 5 min read - Updated May 2026</p>
+                <h3><a href="posts/whatsapp-impersonation.html">WhatsApp Impersonation Scams</a></h3>
+                <p>Spot fake family, boss, delivery, and support messages before you send money or codes.</p>
+              </div>
+            </article>
+
+            <article class="article-card" data-article-card data-article-category="banking">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=78" alt="Documents and phone on a work desk">
+              <div class="article-card-body">
+                <p class="article-meta">Scam awareness - 6 min read - Updated May 2026</p>
+                <h3><a href="posts/digital-arrest-scams.html">Digital Arrest Scams: Do Not Panic</a></h3>
+                <p>Understand fake police or courier calls, video call pressure, and threats of arrest.</p>
+              </div>
+            </article>
+
+            <article class="article-card" data-article-card data-article-category="social">
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=78" alt="Person reviewing payment security on a laptop">
+              <div class="article-card-body">
+                <p class="article-meta">Identity safety - 5 min read</p>
                 <h3><a href="posts/phishing.html">How to Spot Phishing Before You Click</a></h3>
                 <p>Learn the warning signs in fake emails, text messages, login pages, and payment requests.</p>
               </div>
             </article>
 
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=78"
-                alt="Password field and security lock concept on a screen"
-              >
+            <article class="article-card" data-article-card data-article-category="social">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=78" alt="Password field and security lock concept on a screen">
               <div class="article-card-body">
-                <p class="article-meta">Account safety · 6 min read</p>
+                <p class="article-meta">Account safety - 6 min read</p>
                 <h3><a href="posts/password-safety.html">Password Safety That Actually Works</a></h3>
                 <p>Use a password manager, unique passwords, and MFA without making your daily life harder.</p>
               </div>
             </article>
 
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=78"
-                alt="Smartphone and laptop on a desk"
-              >
+            <article class="article-card" data-article-card data-article-category="device">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=78" alt="Smartphone and laptop on a desk">
               <div class="article-card-body">
-                <p class="article-meta">Device safety · 5 min read</p>
+                <p class="article-meta">Device safety - 5 min read</p>
                 <h3><a href="posts/mobile-security.html">Mobile Security Basics for Everyday Use</a></h3>
                 <p>Protect your phone from unsafe apps, SIM swap risks, public Wi-Fi problems, and stolen devices.</p>
               </div>
             </article>
 
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=78"
-                alt="Security code on a laptop screen"
-              >
+            <article class="article-card" data-article-card data-article-category="device">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=78" alt="Security code on a laptop screen">
               <div class="article-card-body">
-                <p class="article-meta">Threat guide · 7 min read</p>
+                <p class="article-meta">Threat guide - 7 min read</p>
                 <h3><a href="posts/cyber-attack-types.html">Cyber Attack Types Everyone Should Know</a></h3>
                 <p>Understand malware, ransomware, account takeover, fake apps, Wi-Fi attacks, and data breaches.</p>
               </div>
             </article>
 
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=900&q=78"
-                alt="Person holding a phone while working at a desk"
-              >
+            <article class="article-card" data-article-card data-article-category="reporting">
+              <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=900&q=78" alt="Person holding a phone while working at a desk">
               <div class="article-card-body">
-                <p class="article-meta">Emergency steps · 4 min read</p>
+                <p class="article-meta">Emergency steps - 4 min read</p>
                 <h3><a href="posts/what-to-do-after-cyber-attack.html">What to Do Quickly After a Cyber Attack</a></h3>
                 <p>A calm first-hour checklist for scams, hacked accounts, malware, lost phones, and payment fraud.</p>
               </div>
             </article>
 
-            <article class="article-card">
-              <img
-                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=78"
-                alt="Notebook and documents on a desk"
-              >
+            <article class="article-card" data-article-card data-article-category="reporting">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=78" alt="Notebook and documents on a desk">
               <div class="article-card-body">
-                <p class="article-meta">Reporting · 5 min read</p>
+                <p class="article-meta">Reporting - 5 min read</p>
                 <h3><a href="posts/how-to-report-cybercrime.html">How to Report Cybercrime and Save Evidence</a></h3>
                 <p>Know what evidence to collect, where to report, and why fast action matters after financial fraud.</p>
               </div>
@@ -146,7 +201,7 @@
         </div>
       </section>
 
-      <section class="section" id="threats" aria-labelledby="threats-title">
+      <section class="section section-band" id="threats" aria-labelledby="threats-title">
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Common hacking types</p>
@@ -164,167 +219,66 @@
             <article class="threat-card" data-category="identity">
               <span class="card-icon" aria-hidden="true">01</span>
               <h3>Phishing</h3>
-              <p>
-                Fake emails, texts, or websites pressure you to reveal passwords, payment details, or one-time codes.
-              </p>
+              <p>Fake emails, texts, or websites pressure you to reveal passwords, payment details, or one-time codes.</p>
               <strong>Protect yourself:</strong>
               <p>Open websites from bookmarks, check sender addresses, and never share verification codes.</p>
             </article>
-
             <article class="threat-card" data-category="identity">
               <span class="card-icon" aria-hidden="true">02</span>
               <h3>Password Attacks</h3>
-              <p>
-                Attackers try leaked, weak, or reused passwords to break into email, banking, and social accounts.
-              </p>
+              <p>Attackers try leaked, weak, or reused passwords to break into email, banking, and social accounts.</p>
               <strong>Protect yourself:</strong>
               <p>Use a password manager, unique passwords, and multi-factor authentication.</p>
             </article>
-
             <article class="threat-card" data-category="device">
               <span class="card-icon" aria-hidden="true">03</span>
               <h3>Malware and Ransomware</h3>
-              <p>
-                Harmful apps or files can steal data, spy on activity, or lock files until money is demanded.
-              </p>
+              <p>Harmful apps or files can steal data, spy on activity, or lock files until money is demanded.</p>
               <strong>Protect yourself:</strong>
               <p>Install updates, avoid unknown downloads, and keep offline or cloud backups.</p>
             </article>
-
             <article class="threat-card" data-category="identity">
               <span class="card-icon" aria-hidden="true">04</span>
               <h3>Social Engineering</h3>
-              <p>
-                Scammers pretend to be support staff, family, employers, or officials to rush you into action.
-              </p>
+              <p>Scammers pretend to be support staff, family, employers, police, courier teams, or officials.</p>
               <strong>Protect yourself:</strong>
               <p>Pause, verify through a trusted channel, and do not act on urgency alone.</p>
             </article>
-
             <article class="threat-card" data-category="network">
               <span class="card-icon" aria-hidden="true">05</span>
               <h3>Public Wi-Fi Snooping</h3>
-              <p>
-                Unsafe networks can expose browsing activity or trick you into joining fake hotspots.
-              </p>
+              <p>Unsafe networks can expose browsing activity or trick you into joining fake hotspots.</p>
               <strong>Protect yourself:</strong>
-              <p>Use mobile data or a trusted VPN for sensitive activity, and avoid unknown hotspots.</p>
+              <p>Use mobile data for sensitive activity, and avoid unknown hotspots.</p>
             </article>
-
             <article class="threat-card" data-category="identity">
               <span class="card-icon" aria-hidden="true">06</span>
               <h3>SIM Swapping</h3>
-              <p>
-                Criminals try to move your phone number to their SIM card so they can receive account codes.
-              </p>
+              <p>Criminals try to move your phone number to their SIM card so they can receive account codes.</p>
               <strong>Protect yourself:</strong>
               <p>Add a carrier PIN and use app-based authentication instead of SMS when possible.</p>
             </article>
-
             <article class="threat-card" data-category="device">
               <span class="card-icon" aria-hidden="true">07</span>
               <h3>Fake Apps</h3>
-              <p>
-                Copycat apps may steal logins, read messages, show fake payment screens, or install spyware.
-              </p>
+              <p>Copycat apps may steal logins, read messages, show fake payment screens, or install spyware.</p>
               <strong>Protect yourself:</strong>
               <p>Use official app stores, check developer names, and remove apps you do not trust.</p>
             </article>
-
             <article class="threat-card" data-category="identity">
               <span class="card-icon" aria-hidden="true">08</span>
               <h3>Investment and Job Scams</h3>
-              <p>
-                Fraudsters promise quick returns, remote jobs, or easy tasks, then demand deposits or fees.
-              </p>
+              <p>Fraudsters promise quick returns, remote jobs, or easy tasks, then demand deposits or fees.</p>
               <strong>Protect yourself:</strong>
               <p>Do not pay to get a job, and verify companies through official websites before sending money.</p>
             </article>
-
             <article class="threat-card" data-category="network">
               <span class="card-icon" aria-hidden="true">09</span>
               <h3>Data Breaches</h3>
-              <p>
-                Leaked passwords, phone numbers, and emails can be reused in phishing and account takeover attempts.
-              </p>
+              <p>Leaked passwords, phone numbers, and emails can be reused in targeted scams.</p>
               <strong>Protect yourself:</strong>
               <p>Change exposed passwords, enable MFA, and watch for targeted messages after a breach.</p>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-band" id="protect" aria-labelledby="protect-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Personal protection checklist</p>
-            <h2 id="protect-title">Check what is already enabled, then fix the gaps.</h2>
-            <p>
-              Use these checklists for your phone, social media accounts, computer, and home network. Start with the
-              items that protect your banking, email, and identity.
-            </p>
-          </div>
-
-          <div class="checklist-grid">
-            <section class="checklist-card" aria-labelledby="phone-checklist">
-              <div class="checklist-card-header">
-                <h3 id="phone-checklist">Phone</h3>
-                <span class="progress-pill" data-progress>0/6</span>
-              </div>
-              <div class="checklist">
-                <label><input type="checkbox"> Screen lock uses PIN, password, fingerprint, or face unlock</label>
-                <label><input type="checkbox"> Phone OS and apps are updated</label>
-                <label><input type="checkbox"> Find My Device or Find My iPhone is enabled</label>
-                <label><input type="checkbox"> App permissions are reviewed for camera, mic, location, and contacts</label>
-                <label><input type="checkbox"> SIM PIN or mobile carrier account PIN is enabled</label>
-                <label><input type="checkbox"> Banking and email apps use MFA or biometric lock</label>
-              </div>
-            </section>
-
-            <section class="checklist-card" aria-labelledby="social-checklist">
-              <div class="checklist-card-header">
-                <h3 id="social-checklist">Social Media</h3>
-                <span class="progress-pill" data-progress>0/6</span>
-              </div>
-              <div class="checklist">
-                <label><input type="checkbox"> Two-factor authentication is enabled</label>
-                <label><input type="checkbox"> Recovery email and phone number are correct</label>
-                <label><input type="checkbox"> Unknown logged-in devices are removed</label>
-                <label><input type="checkbox"> Profile privacy settings are reviewed</label>
-                <label><input type="checkbox"> Messages from strangers are limited or filtered</label>
-                <label><input type="checkbox"> Posts do not reveal OTPs, ID cards, tickets, or travel plans</label>
-              </div>
-            </section>
-
-            <section class="checklist-card" aria-labelledby="computer-checklist">
-              <div class="checklist-card-header">
-                <h3 id="computer-checklist">Computer</h3>
-                <span class="progress-pill" data-progress>0/6</span>
-              </div>
-              <div class="checklist">
-                <label><input type="checkbox"> Windows, macOS, or Linux updates are enabled</label>
-                <label><input type="checkbox"> Browser and extensions are updated</label>
-                <label><input type="checkbox"> Antivirus or built-in security protection is active</label>
-                <label><input type="checkbox"> Important files are backed up</label>
-                <label><input type="checkbox"> Downloads are installed only from trusted websites</label>
-                <label><input type="checkbox"> Admin account is not used for everyday browsing</label>
-              </div>
-            </section>
-
-            <section class="checklist-card" aria-labelledby="network-checklist">
-              <div class="checklist-card-header">
-                <h3 id="network-checklist">Home Network</h3>
-                <span class="progress-pill" data-progress>0/6</span>
-              </div>
-              <div class="checklist">
-                <label><input type="checkbox"> Wi-Fi uses WPA2 or WPA3 security</label>
-                <label><input type="checkbox"> Router admin password is changed from default</label>
-                <label><input type="checkbox"> Wi-Fi password is strong and not shared publicly</label>
-                <label><input type="checkbox"> Guest Wi-Fi is used for visitors or smart devices</label>
-                <label><input type="checkbox"> Router firmware is updated</label>
-                <label><input type="checkbox"> Unknown devices are removed from the network</label>
-              </div>
-            </section>
           </div>
         </div>
       </section>
@@ -339,40 +293,9 @@
             <li><strong>Disconnect:</strong> Turn off Wi-Fi or unplug the network if a device looks infected.</li>
             <li><strong>Change passwords:</strong> Start with email, banking, and social accounts from a safe device.</li>
             <li><strong>Enable MFA:</strong> Add app-based authentication where available.</li>
-            <li><strong>Contact providers:</strong> Tell your bank, carrier, school, or workplace if accounts are affected.</li>
+            <li><strong>Contact providers:</strong> Tell your bank, mobile carrier, payment app, or platform support.</li>
             <li><strong>Report:</strong> In India, call <strong>1930</strong> for online financial fraud and file at <a href="https://www.cybercrime.gov.in/">cybercrime.gov.in</a>.</li>
           </ol>
-        </div>
-      </section>
-
-      <section class="section section-band" id="report" aria-labelledby="report-title">
-        <div class="section-inner report-layout">
-          <div class="section-heading">
-            <p class="eyebrow">Report cybercrime</p>
-            <h2 id="report-title">Fast reporting can protect your money and evidence.</h2>
-            <p>
-              If money was transferred, report immediately. Keep screenshots, transaction IDs, phone numbers, emails,
-              website links, chat history, and bank messages. Do not delete anything until the complaint is filed.
-            </p>
-          </div>
-
-          <div class="report-cards">
-            <article>
-              <h3>India</h3>
-              <p>Call <strong>1930</strong> immediately for online financial fraud. File and track complaints at the official National Cyber Crime Reporting Portal.</p>
-              <a href="https://www.cybercrime.gov.in/">cybercrime.gov.in</a>
-            </article>
-            <article>
-              <h3>Banking and UPI Fraud</h3>
-              <p>Contact your bank or payment app support immediately. Ask them to block suspicious transactions and note every complaint reference number.</p>
-              <a href="https://www.cybercrime.gov.in/">File cyber complaint</a>
-            </article>
-            <article>
-              <h3>Emergency or Threat</h3>
-              <p>For immediate danger, visit the nearest police station or call the national emergency helpline. Keep your cyber complaint ID and evidence ready.</p>
-              <a href="https://www.cybercrime.gov.in/">Track complaint</a>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -387,6 +310,7 @@
             </p>
           </div>
           <div class="author-links" aria-label="Author contact links">
+            <a href="about.html">About this blog</a>
             <a href="https://www.linkedin.com/in/sreenath-v-69b3b79a">LinkedIn</a>
             <a href="mailto:sreenath92@hotmail.com">Email</a>
             <a href="https://github.com/Sreenath92">GitHub</a>

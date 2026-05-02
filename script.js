@@ -2,6 +2,10 @@ const filterButtons = document.querySelectorAll("[data-filter]");
 const threatCards = document.querySelectorAll("[data-category]");
 const checklistCards = document.querySelectorAll(".checklist-card");
 const backToTop = document.querySelector(".back-to-top");
+const articleCards = document.querySelectorAll("[data-article-card]");
+const articleFilters = document.querySelectorAll("[data-article-filter]");
+const articleSearch = document.querySelector("[data-article-search]");
+let activeArticleFilter = "all";
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -37,4 +41,28 @@ if (backToTop) {
 
   window.addEventListener("scroll", toggleBackToTop, { passive: true });
   toggleBackToTop();
+}
+
+const updateArticleCards = () => {
+  const query = articleSearch ? articleSearch.value.trim().toLowerCase() : "";
+
+  articleCards.forEach((card) => {
+    const matchesFilter = activeArticleFilter === "all" || card.dataset.articleCategory === activeArticleFilter;
+    const matchesSearch = !query || card.textContent.toLowerCase().includes(query);
+    card.classList.toggle("is-hidden", !(matchesFilter && matchesSearch));
+  });
+};
+
+articleFilters.forEach((button) => {
+  button.addEventListener("click", () => {
+    activeArticleFilter = button.dataset.articleFilter;
+    articleFilters.forEach((item) => item.classList.remove("is-active"));
+    button.classList.add("is-active");
+    updateArticleCards();
+  });
+});
+
+if (articleSearch) {
+  articleSearch.addEventListener("input", updateArticleCards);
+  updateArticleCards();
 }

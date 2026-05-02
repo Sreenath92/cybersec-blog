@@ -5,15 +5,22 @@ A free, static cybersecurity awareness blog page for beginners. It explains comm
 ## Files
 
 - `index.html` - page content
+- `about.html` - author and blog purpose
+- `report-india.html` - India-focused cybercrime reporting guide
+- `checklists.html` - printable cyber safety checklists
 - `styles.css` - responsive styling
 - `script.js` - threat-card filtering
 - `posts/` - individual blog article pages
+- `favicon.svg` - browser tab icon
 
 ## Current Topics
 
 - Phishing awareness
 - Password safety
 - Mobile security
+- UPI fraud awareness
+- WhatsApp impersonation scams
+- Digital arrest scams
 - Common cyber attack types
 - Phone, social media, computer, and home network safety checklists
 - What to do quickly after a cyber attack

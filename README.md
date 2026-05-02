@@ -15,6 +15,7 @@ A free, static cybersecurity awareness blog page for beginners. It explains comm
 - Password safety
 - Mobile security
 - Common cyber attack types
+- Phone, social media, computer, and home network safety checklists
 - What to do quickly after a cyber attack
 - How to report cybercrime and save evidence
 

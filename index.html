@@ -255,21 +255,76 @@
       </section>
 
       <section class="section section-band" id="protect" aria-labelledby="protect-title">
-        <div class="section-inner protection-layout">
+        <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Personal protection checklist</p>
-            <h2 id="protect-title">Small habits that block big problems.</h2>
+            <h2 id="protect-title">Check what is already enabled, then fix the gaps.</h2>
             <p>
-              You do not need to be technical to be safer online. Start with these habits and build from there.
+              Use these checklists for your phone, social media accounts, computer, and home network. Start with the
+              items that protect your banking, email, and identity.
             </p>
           </div>
-          <div class="checklist">
-            <label><input type="checkbox"> Use unique passwords for important accounts</label>
-            <label><input type="checkbox"> Turn on multi-factor authentication</label>
-            <label><input type="checkbox"> Keep phones, laptops, browsers, and apps updated</label>
-            <label><input type="checkbox"> Back up important files regularly</label>
-            <label><input type="checkbox"> Verify payment or password requests before acting</label>
-            <label><input type="checkbox"> Review bank and email alerts weekly</label>
+
+          <div class="checklist-grid">
+            <section class="checklist-card" aria-labelledby="phone-checklist">
+              <div class="checklist-card-header">
+                <h3 id="phone-checklist">Phone</h3>
+                <span class="progress-pill" data-progress>0/6</span>
+              </div>
+              <div class="checklist">
+                <label><input type="checkbox"> Screen lock uses PIN, password, fingerprint, or face unlock</label>
+                <label><input type="checkbox"> Phone OS and apps are updated</label>
+                <label><input type="checkbox"> Find My Device or Find My iPhone is enabled</label>
+                <label><input type="checkbox"> App permissions are reviewed for camera, mic, location, and contacts</label>
+                <label><input type="checkbox"> SIM PIN or mobile carrier account PIN is enabled</label>
+                <label><input type="checkbox"> Banking and email apps use MFA or biometric lock</label>
+              </div>
+            </section>
+
+            <section class="checklist-card" aria-labelledby="social-checklist">
+              <div class="checklist-card-header">
+                <h3 id="social-checklist">Social Media</h3>
+                <span class="progress-pill" data-progress>0/6</span>
+              </div>
+              <div class="checklist">
+                <label><input type="checkbox"> Two-factor authentication is enabled</label>
+                <label><input type="checkbox"> Recovery email and phone number are correct</label>
+                <label><input type="checkbox"> Unknown logged-in devices are removed</label>
+                <label><input type="checkbox"> Profile privacy settings are reviewed</label>
+                <label><input type="checkbox"> Messages from strangers are limited or filtered</label>
+                <label><input type="checkbox"> Posts do not reveal OTPs, ID cards, tickets, or travel plans</label>
+              </div>
+            </section>
+
+            <section class="checklist-card" aria-labelledby="computer-checklist">
+              <div class="checklist-card-header">
+                <h3 id="computer-checklist">Computer</h3>
+                <span class="progress-pill" data-progress>0/6</span>
+              </div>
+              <div class="checklist">
+                <label><input type="checkbox"> Windows, macOS, or Linux updates are enabled</label>
+                <label><input type="checkbox"> Browser and extensions are updated</label>
+                <label><input type="checkbox"> Antivirus or built-in security protection is active</label>
+                <label><input type="checkbox"> Important files are backed up</label>
+                <label><input type="checkbox"> Downloads are installed only from trusted websites</label>
+                <label><input type="checkbox"> Admin account is not used for everyday browsing</label>
+              </div>
+            </section>
+
+            <section class="checklist-card" aria-labelledby="network-checklist">
+              <div class="checklist-card-header">
+                <h3 id="network-checklist">Home Network</h3>
+                <span class="progress-pill" data-progress>0/6</span>
+              </div>
+              <div class="checklist">
+                <label><input type="checkbox"> Wi-Fi uses WPA2 or WPA3 security</label>
+                <label><input type="checkbox"> Router admin password is changed from default</label>
+                <label><input type="checkbox"> Wi-Fi password is strong and not shared publicly</label>
+                <label><input type="checkbox"> Guest Wi-Fi is used for visitors or smart devices</label>
+                <label><input type="checkbox"> Router firmware is updated</label>
+                <label><input type="checkbox"> Unknown devices are removed from the network</label>
+              </div>
+            </section>
           </div>
         </div>
       </section>

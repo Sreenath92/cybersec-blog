@@ -7,6 +7,13 @@ A free, static cybersecurity awareness blog page for beginners. It explains comm
 - `index.html` - page content
 - `styles.css` - responsive styling
 - `script.js` - threat-card filtering
+- `posts/` - individual blog article pages
+
+## Branch Workflow
+
+- `main` is the live GitHub Pages branch.
+- `dev` is for changes and new articles.
+- Merge `dev` into `main` only when you want to publish updates.
 
 ## Preview Locally
 

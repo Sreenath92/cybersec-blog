@@ -194,7 +194,8 @@ a {
 
 .intro-grid,
 .protection-layout,
-.response-grid {
+.response-grid,
+.report-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: clamp(28px, 5vw, 70px);
@@ -366,6 +367,35 @@ a {
   font-weight: 800;
 }
 
+.report-cards {
+  display: grid;
+  gap: 14px;
+}
+
+.report-cards article {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.report-cards h3 {
+  margin: 0 0 8px;
+  font-size: 1.16rem;
+}
+
+.report-cards p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.report-cards a {
+  display: inline-flex;
+  margin: 0 12px 8px 0;
+  color: var(--aqua);
+  font-weight: 800;
+}
+
 .author-panel {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
@@ -519,6 +549,7 @@ a {
   .intro-grid,
   .protection-layout,
   .response-grid,
+  .report-layout,
   .author-panel {
     grid-template-columns: 1fr;
   }

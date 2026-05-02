@@ -9,6 +9,15 @@ A free, static cybersecurity awareness blog page for beginners. It explains comm
 - `script.js` - threat-card filtering
 - `posts/` - individual blog article pages
 
+## Current Topics
+
+- Phishing awareness
+- Password safety
+- Mobile security
+- Common cyber attack types
+- What to do quickly after a cyber attack
+- How to report cybercrime and save evidence
+
 ## Branch Workflow
 
 - `main` is the live GitHub Pages branch.
